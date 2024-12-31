@@ -1,0 +1,84 @@
+/* Register.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Change font */
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #c1b7cc, #dbe0ea); /* Elegant gradient background */
+}
+
+.register-card {
+    background: white; /* Card background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px; /* Padding inside the card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 400px; /* Max width for the card */
+    width: 100%; /* Full width on small screens */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.register-card:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.register-card h1 {
+    margin-bottom: 20px; /* Margin below heading */
+    font-size: 32px; /* Increased font size */
+    color: #333; /* Dark text color */
+    text-align: center; /* Center text */
+}
+
+.register-card input {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside inputs */
+    margin: 10px 0; /* Margin around inputs */
+    border: 2px solid #054B05; /* Elegant border color */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Input font size */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition for border color and shadow */
+}
+
+.register-card input:focus {
+    border-color: #054B05; /* Darker pink on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgb(5, 75, 5); /* Shadow on focus */
+}
+
+.register-card button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside button */
+    background-color: #054B05; /* Button background color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Button font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for background color and scale */
+}
+
+.register-card button:hover {
+    background-color: #0a6d0a; /* Lighter green on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+
+.login-link {
+    margin-top: 20px; /* Add some space above the link */
+    text-align: center; /* Center the text */
+}
+
+.login-link span {
+    color: #054B05; /* Link color */
+    cursor: pointer; /* Change cursor to pointer */
+    text-decoration: underline; /* Underline text to indicate it's a link */
+}
+
+.login-link span:hover {
+    color: #054B05; /* Lighter pink on hover */
+}

@@ -1,0 +1,77 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Change font */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #c1b7cc, #dbe0ea); /* Gradient background */
+}
+
+
+
+.login-card h1 {
+    margin-bottom: 40px; /* Margin below heading */
+    font-size: 40px; /* Increased font size */
+    color: #000; /* Dark text color */
+    text-align: center; /* Center text */
+}
+
+.login-card input {
+    width: 120%; /* Full width */
+    padding: 10px; /* Padding inside inputs */
+    margin: 10px 0; /* Margin around inputs */
+    border: 2px solid #cccccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Input font size */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+.login-card input:focus {
+    border-color: #666; /* Darker border on focus */
+    outline: none; /* Remove default outline */
+}
+
+.password-input {
+    position: relative; /* Positioning for the eye icon */
+}
+
+.password-input input {
+    padding-right: 10px; /* Space for the icon */
+}
+
+.password-input span {
+    position: absolute;
+    right: 5px; /* Position the icon on the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    cursor: pointer; /* Pointer cursor */
+    color: #4a4a4a; /* Icon color */
+    font-size: 20px; /* Icon size */
+}
+
+.login-card button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside button */
+    background-color: rgb(5, 75, 5); /* Custom background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Button font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.login-card button:hover {
+    background-color: #6abf4b; /* Darker background on hover */
+}
+
+.signup-container {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Margin above sign up text */
+}

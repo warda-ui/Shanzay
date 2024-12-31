@@ -1,0 +1,214 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ff3e3e, #000000, #ffffff);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header Styles */
+.app-bar {
+  background: linear-gradient(to right, #ff3e3e, #000000, #ffffff);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.app-bar h1 {
+  font-size: 24px;
+  color: white;
+}
+
+.app-bar .icon-btn {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.app-bar .icon-btn:hover {
+  color: #ff3e3e;
+}
+
+/* Drawer Styles */
+.drawer {
+  width: 250px;
+  background: #000000;
+  padding-top: 50px;
+}
+
+.drawer .list {
+  list-style: none;
+  padding: 0;
+}
+
+.drawer .list-item {
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.drawer .list-item:hover {
+  background-color: #ff3e3e;
+}
+
+.drawer .list-item .icon {
+  margin-right: 10px;
+}
+
+.drawer .list-item a {
+  color: white;
+  font-size: 18px;
+}
+
+.drawer .list-item a:hover {
+  color: #ff3e3e;
+}
+
+/* Main Dashboard Content */
+.main-content {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #ff3e3e, #000000);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #ff3e3e;
+  transform: scale(1.05);
+}
+
+.card button:focus {
+  outline: none;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal h3 {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal input:focus,
+.modal select:focus,
+.modal textarea:focus {
+  border-color: #ff3e3e;
+  outline: none;
+}
+
+.modal button {
+  background-color: #ff3e3e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #ff1c1c;
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer {
+  background: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #ff3e3e;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .drawer {
+    width: 200px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
